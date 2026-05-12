@@ -1,0 +1,71 @@
+{
+  "_comment": "Машиночитаемые правила ТЗ. rule_validator.py проверяет по этому файлу.",
+  "_version": "1.0",
+
+  "dimensions": [
+    {
+      "field": "bolt_size",
+      "description": "Размер болтового соединения",
+      "allowed_values": ["M8x1.25", "M10x1.5", "M12x1.75", "M14x2", "M16x2", "M20x2.5"],
+      "unit": "мм",
+      "standard": "ГОСТ 24705-2004",
+      "tz_reference": "Раздел 3, п. 3.1"
+    },
+    {
+      "field": "wall_thickness",
+      "description": "Толщина стенки трубы",
+      "min": 4.0,
+      "max": 12.0,
+      "unit": "мм",
+      "standard": "ГОСТ 8731-74",
+      "tz_reference": "Раздел 4, п. 4.2.1"
+    },
+    {
+      "field": "weld_gap",
+      "description": "Зазор при сварке",
+      "min": 1.0,
+      "max": 3.0,
+      "unit": "мм",
+      "standard": "ГОСТ 14771-76",
+      "tz_reference": "Раздел 5, п. 5.1"
+    },
+    {
+      "field": "surface_roughness",
+      "description": "Шероховатость поверхности Ra",
+      "min": 0.8,
+      "max": 6.3,
+      "unit": "мкм",
+      "standard": "ГОСТ 2789-73",
+      "tz_reference": "Раздел 4, п. 4.3"
+    }
+  ],
+
+  "materials": {
+    "description": "Допустимые марки стали и сплавов",
+    "allowed": ["Ст3сп", "Ст3пс", "09Г2С", "17Г1С", "12Х18Н10Т", "08Х18Н10Т"],
+    "forbidden": ["Ст5", "Ст6"],
+    "standard": "ГОСТ 380-2005",
+    "tz_reference": "Раздел 2, п. 2.1"
+  },
+
+  "designations": {
+    "description": "Паттерн конструкторских обозначений",
+    "pattern": "^[А-ЯA-Z]{2,5}-\\d{3,6}(-\\d{2})?$",
+    "examples": ["КД-00100", "СБ-00200-01", "ДЕТ-00301"],
+    "tz_reference": "Раздел 1, п. 1.3"
+  },
+
+  "coatings": {
+    "description": "Допустимые виды покрытий",
+    "allowed_codes": ["Хим.Окс", "Ц6", "Н12", "Кд6", "Ан.Окс"],
+    "standard": "ГОСТ 9.306-85",
+    "tz_reference": "Раздел 6, п. 6.1"
+  },
+
+  "tolerances": {
+    "description": "Квалитеты допуска для посадочных отверстий",
+    "allowed_grades": ["H7", "H8", "H9", "h6", "h7", "k6", "n6", "p6"],
+    "standard": "ГОСТ 25347-2013",
+    "tz_reference": "Раздел 4, п. 4.4"
+  }
+}

@@ -1,0 +1,27 @@
+# PDF extraction
+pymupdf>=1.24.0
+pymupdf4llm>=0.0.17
+
+# OCR
+pytesseract>=0.3.13
+easyocr>=1.7.1
+pdf2image>=1.17.0
+Pillow>=10.0.0
+
+# Embeddings & vector index
+sentence-transformers>=3.0.0
+faiss-cpu>=1.8.0
+
+# Data validation & models
+pydantic>=2.7.0
+
+# LLM (Ollama HTTP client)
+requests>=2.31.0
+
+# Utilities
+numpy>=1.26.0
+tqdm>=4.66.0
+
+# Tests
+pytest>=8.0.0
+pytest-mock>=3.14.0

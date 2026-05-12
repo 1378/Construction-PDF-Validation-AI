@@ -1,0 +1,63 @@
+# Byte-compiled / caches
+__pycache__/
+*.py[cod]
+*$py.class
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+*.egg-info/
+.eggs/
+dist/
+build/
+
+# Virtual environments
+.venv/
+venv/
+env/
+
+# IDE / OS
+.idea/
+.vscode/
+*.swp
+.DS_Store
+Thumbs.db
+
+# Environment (keep .env.example tracked)
+.env
+.env.local
+.env.*.local
+!.env.example
+
+# Secrets / credentials (never commit)
+*.pem
+*.p12
+*.pfx
+secrets/
+credentials.json
+
+# Runtime outputs (regenerate from pipeline)
+out/
+data/images/
+data/extracted_text/
+data/projects_run/
+data/projects_pipeline/
+data/faiss_index/*.faiss
+data/faiss_index/*.json
+
+# Hugging Face / model caches (sentence-transformers)
+.cache/
+huggingface/
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Logs
+*.log
+
+# Test / coverage artifacts
+.coverage
+coverage.xml
+htmlcov/
+
+# OS / shell
+*.stackdump

@@ -1,0 +1,32 @@
+{
+  "drawing_id": "FIXTURE-01",
+  "pdf_path": "./data/pdf/example_drawing.pdf",
+  "page_number": null,
+  "total_pages": 1,
+  "llm_used": true,
+  "elements": [
+    {
+      "item_id": "Поз01",
+      "name": "Штуцер",
+      "element_type": null,
+      "size": "M16x2",
+      "material": "Ст3сп",
+      "designation": "КД-00100",
+      "note": null,
+      "source": "pdf_text",
+      "confidence": "medium",
+      "raw_text_fragment": null
+    }
+  ],
+  "compliance": {
+    "standard": "ГОСТ 24705-2004",
+    "is_compliant": true,
+    "issues": [],
+    "missing_info": [],
+    "citations": ["Пример цитаты из ТЗ для теста фикстуры."]
+  },
+  "raw_ocr_text": null,
+  "llava_caption": null,
+  "tz_chunks_used": [],
+  "overall_confidence": "high"
+}
